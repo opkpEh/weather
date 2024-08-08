@@ -9,13 +9,12 @@
 <body>
  
     <div class="Container">
-    <h1>weather</h1>
-    <form action="/weather" method="post">
-        <label for="place">City</label>
-        <input name="place" type="text" id="place" placeholder="Azmagarh">
+    <h1 class="heading">Weather</h1>
+    <form class="data">
+        <label "place">City</label>
+        <input name="place" type="text" id="place" placeholder="Azamgarh">
         <input type="submit" value="Get Weather">
     </form>
-    </div>     
     <div class="weather-data"></div>
     <div class="icon">
         <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
@@ -27,6 +26,7 @@
         <div>Humidity: 40%</div>
         <div>Windspeed: 5 m/s</div>
     </div>
+</div>     
     <script src="script.js"></script
 </body>
 </html>
