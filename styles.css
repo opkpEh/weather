@@ -8,6 +8,10 @@
       font-style: normal;
 }
 
+body{
+      background-color: rgb(208, 206, 206);
+}
+
 .Container{
       background-color: beige;
       box-shadow: 0 0 20px rgba(0,0,0,.5);
