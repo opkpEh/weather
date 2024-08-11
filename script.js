@@ -1,5 +1,5 @@
-const openweather_key = "00e56V5oml70xzmwv9c5jKF6cvlRY1qBJ51apgsU3eI";
-const unsplash_key = "2f795439ea9c736f5408c423f9011008";
+const openweather_key = config.apiKeys.OPNEWEATHER_API_KEY;
+const unsplash_key = config.apiKeys.UNSPLASH_API_KEY;
 
 const container = document.querySelector('.container');
 const initialContent = document.querySelector('.initial-content');
