@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
- 
-    <div class="Container">
-    <h1 class="heading"></h1>
-    <form class="data">
-        <label "place">City</label>
-        <input name="place" type="text" id="place" placeholder="Azamgarh">
-        <input type="submit" value="Get Weather">
-    </form>
-    <div class="weather-data"></div>
-    <div class="icon">
-        <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
+    <div class="container">
+        <h1 class="heading">Dashboard</h1>
+        <form class="search-form">
+            <input name="place" type="text" id="place" placeholder="Enter city name">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="initial-content">
+            <i class="fas fa-cloud-sun"></i>
+            <p>Enter a city name to get the weather forecast</p>
+        </div>
+        <div class="weather-data" style="display: none;">
+            <div class="main-info">
+                <div class="icon">
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+                </div>
+                <div class="temperature">22°C</div>
+                <div class="description">Sunny</div>
+            </div>
+            <div class="details">
+                <div class="detail-item">
+                    <i class="fas fa-thermometer-half"></i>
+                    <span>Feels like: 23°C</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <span>Humidity: 40%</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <span>Wind speed: 5 m/s</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="temperature">22°C</div>
-    <div class="description">Sunny</div>
-    <div class="details">
-        <div>Feels like: 23°C</div>
-        <div>Humidity: 40%</div>
-        <div>Windspeed: 5 m/s</div>
-    </div>
-    <div class="background_place_img"><img src=""></div>
-</div>     
-
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
